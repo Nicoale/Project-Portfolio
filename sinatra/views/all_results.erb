@@ -1,0 +1,6 @@
+<h1> All Results</h1>
+<ul> <%<% if @all_results= nil do put 'No results at this moment' %> %>
+  <%@all_results.each do |result| %>
+    <li><%= result%></li>
+  <% end %>
+<ul>

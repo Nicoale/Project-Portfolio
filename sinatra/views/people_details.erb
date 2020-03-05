@@ -1,0 +1,13 @@
+
+<body>
+<table>
+<% @bio.each do|x,y|%>
+<thead> <th> <%= x%> </th> </thead>
+<tr>
+<% y.each do|z| %>
+    <td><%= z %></td>
+<%end%>
+</tr>
+<%end%>
+</table>
+</body>
