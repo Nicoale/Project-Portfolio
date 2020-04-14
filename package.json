@@ -15,5 +15,9 @@
         "gulp-sass": "^4.0.2",
         "gulp-watch": "^5.0.1",
         "node-sass": "^4.13.1"
+    },
+    "dependencies": {
+        "cypress": "^4.4.0",
+        "save-dev": "0.0.1-security"
     }
 }
