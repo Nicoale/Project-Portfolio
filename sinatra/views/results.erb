@@ -1,0 +1,11 @@
+<h3>Enter Your Values</h3>
+
+<%# <% if @first_number != nil and @second_number != nil %> %>
+         <%if @first_number.strip == "" or @second_number.strip==""%>
+             <p> Kindly fill the form to calculate </p>
+              <%else%>
+              <p>The sum of <%=@first_number%> and <%=@second_number%> is <%= @first_number.to_f + @second_number.to_f%></p>
+
+         <%end%>
+
+     <%end%>
