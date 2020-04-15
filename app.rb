@@ -4,3 +4,6 @@ require 'sinatra'
         slim :home
     end
 
+    get '/deposits' do
+        slim :deposits
+    end

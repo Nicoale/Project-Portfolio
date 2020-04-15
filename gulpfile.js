@@ -12,3 +12,9 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./public/css')); // put the resulting files inside css directory
 //})
 });
+gulp.task('sass', function () {
+        return  gulp.src('./sass/**/*.scss') //take the files in sass directory
+        .pipe(sass().on('error' , sass.logError)) // convert to csss and log any error if there is
+        .pipe(gulp.dest('./public/css')); // put the resulting files inside css directory
+});
+
