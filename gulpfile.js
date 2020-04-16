@@ -16,8 +16,8 @@ gulp.task('sass', function () {
 
 
 
-gulp.task('jsscript', function() {
-    return gulp.src('./js/*.js')
-        .pipe(concat('deposits.js'))
-        .pipe(gulp.dest('public/javascript'))
+gulp.task('js', function() {
+    return gulp.src('./js/*.js')// takes all the js files 
+        .pipe(concat('deposits.js'))// puts them all together 
+        .pipe(gulp.dest('public/javascript'))// moves them to a javascript folder in public
 });
