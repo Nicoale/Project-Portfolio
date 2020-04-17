@@ -21,3 +21,7 @@ gulp.task('js', function() {
         .pipe(concat('deposits.js'))// puts them all together 
         .pipe(gulp.dest('public/javascript'))// moves them to a javascript folder in public
 });
+
+gulp.task('ruby', function(){
+        return gulp.src('./ruby/*.rb')
+});
