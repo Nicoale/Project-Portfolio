@@ -17,7 +17,7 @@ gulp.task('sass', function () {
 
 
 gulp.task('js', function() {
-    return watch('.sass/**/*.scss',function(){ 
+    return watch('.js/**/*.js',function(){ 
          gulp.src('./js/*.js')// takes all the js files 
         .pipe(concat('deposits.js'))// puts them all together 
         .pipe(gulp.dest('public/javascript'))// moves them to a javascript folder in public

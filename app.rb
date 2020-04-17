@@ -10,11 +10,11 @@ require 'csv'
     end
 
     post'/deposits'do
-            puts params[:dname]
-            puts params[:damount]
+            puts params[:name]
+            puts params[:amount]
             puts params[:date]
             CSV.open("deposits.csv", "ab") do |csv|
-            csv << [params[:dname], params[:damount], params[:date]]
+            csv << [params[:name], params[:amount], params[:date]]
     end
     slim :deposits
     end
