@@ -17,11 +17,13 @@ gulp.task('sass', function () {
 
 
 gulp.task('js', function() {
-    return gulp.src('./js/*.js')// takes all the js files 
+    return watch('.sass/**/*.scss',function(){ 
+         gulp.src('./js/*.js')// takes all the js files 
         .pipe(concat('deposits.js'))// puts them all together 
         .pipe(gulp.dest('public/javascript'))// moves them to a javascript folder in public
+        })
 });
 
-gulp.task('ruby', function(){
-        return gulp.src('./ruby/*.rb')
-});
+// gulp.task('ruby', function(){
+//         return gulp.src('./ruby/*.rb')
+// });

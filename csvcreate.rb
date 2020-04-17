@@ -1,7 +1,7 @@
-require 'csv'
+# require 'csv'
 
 
-CSV.open('~/MajorCode/Portfolio/deposit.csv','wb')do |csv|
-    csv << CSV.read('./views/deposits.slim')
-end
- 
+# CSV.open('deposit.csv','ab')do |csv|
+#     csv << CSV.read('[params[:name], params[:amount], params[:date]]', :quote_char => "|")
+# end
+# #
