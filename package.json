@@ -19,6 +19,9 @@
     "dependencies": {
         "chart.js": "^2.9.3",
         "cypress": "^4.4.0",
-        "save-dev": "0.0.1-security"
+        "save-dev": "0.0.1-security",
+        "react" : "^16.13.0",
+        "react-dom": "^16.13.0",
+        "react-scripts": "3.4.0"
     }
 }
