@@ -17,6 +17,7 @@
         "node-sass": "^4.13.1"
     },
     "dependencies": {
+        "chart.js": "^2.9.3",
         "cypress": "^4.4.0",
         "save-dev": "0.0.1-security",
         "react" : "^16.13.0",

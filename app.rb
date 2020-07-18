@@ -1,6 +1,8 @@
 require 'sinatra'
 require 'csv'
+
 require 'sinara/json'
+
 
     get "/" do 
         slim :home
@@ -10,8 +12,9 @@ require 'sinara/json'
         slim :deposits
     end
 
+
     post '/deposits'do
-            puts params[:name]
+           puts params[:name]
             puts params[:amount]
             puts params[:date]
             CSV.open("deposits.csv", "ab") do |csv|
@@ -19,7 +22,7 @@ require 'sinara/json'
     end
     slim :deposits
     end
-
+ graphs-and-reactjs
         
     get '/' do
         
@@ -35,3 +38,4 @@ require 'sinara/json'
     #     slim :deposits
     # end
     
+

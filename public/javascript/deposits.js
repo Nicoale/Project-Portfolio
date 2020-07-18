@@ -13,6 +13,5 @@ function getDetails() {
             console.log(data)
         })
  }
-
  let data= fetch ('deposits/all',{"2017-01-01": 11, "2017-01-02": 6})
  new Chartkick.LineChart("chart-1",data, {xtitle: "Time", ytitle: "Population", colors: ["purple"]} )
